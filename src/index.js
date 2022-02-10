@@ -1,17 +1,35 @@
+// import React from 'react';
+// import ReactDOM  from 'react-dom';
+// function Welcome(){
+//  return(
+//    <h1>Welcome to react</h1>
+//  )
+// }
+// ReactDOM.render(
+//   <Welcome/>,
+//   document.getElementById('root')
+// )
+
+// // )
+// // let element = document.createElement(h1);
+// // element.innerHTML='This is from JAVASCRIPT';
+// // document.getElementById('root').appendChild(element);
+
+
+
+
+
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import ReactDOM  from 'react-dom';
+import Picture from './images/pic.jpg';
+import Lizard from './Lizard.js';
+import './style.css'
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  <div>
+   <center>
+    <img className="image" src={Picture} alt="" />
+    <Lizard />
+    </center>
+  </div>,
+document.getElementById('root')
+)
